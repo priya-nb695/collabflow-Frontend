@@ -1,0 +1,2 @@
+import { createFileRoute } from "@tanstack/react-router"; import { AuthPage } from "@/components/collabflow/auth";
+export const Route = createFileRoute("/login")({ head: () => ({ meta: [{ title: "Log in — CollabFlow" }, { name: "description", content: "Log in to your CollabFlow workspace." }, { property: "og:title", content: "Log in — CollabFlow" }, { property: "og:description", content: "Log in to your CollabFlow workspace." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }), component: () => <AuthPage mode="login" /> });
